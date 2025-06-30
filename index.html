@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A.Wears Sports</title>
+  <style>
+    /* ====== Base Styles ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ====== Header ====== */
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1em 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1em;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff6b00;
+    }
+
+    /* ====== Hero Section ====== */
+    .hero {
+      background: linear-gradient(to right, #222, #444);
+      color: white;
+      text-align: center;
+      padding: 4em 1em;
+    }
+
+    .hero-img {
+      margin-top: 2em;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 3px solid #ff6b00;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 0.8em 2em;
+      background-color: #ff6b00;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #e65c00;
+    }
+
+    /* ====== Products Section ====== */
+    .products {
+      padding: 3em 1em;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 2em;
+      font-size: 2em;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2em;
+    }
+
+    .product-card {
+      background-color: white;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 1em;
+      border-radius: 5px;
+    }
+
+    .product-card h3 {
+      margin-bottom: 0.5em;
+      font-size: 1.2em;
+    }
+
+    .product-card p {
+      color: #ff6b00;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    /* ====== Footer ====== */
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+      margin-top: 3em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== Header ====== -->
+  <header>
+    <nav>
+      <div class="logo">A.Wears Sports</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== Hero Section ====== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Gear Up for Greatness</h1>
+      <p>Premium sportswear for athletes who demand style and performance.</p>
+      <!-- 📸 Replace this with your actual image link -->
+      <img src="your-hero-banner.jpg" alt="Hero Clothing Banner" class="hero-img" />
+      <a href="#" class="cta-btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ====== Products Section ====== -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      
+      <!-- 🧢 Product 1 -->
+      <div class="product-card">
+        <img src="sports2.jpg" alt="Pro Jersey" />
+        <h3>Pro Team Jersey</h3>
+        <p>$49.99</p>
+      </div>
+
+      <!-- 👟 Product 2 -->
+      <div class="product-card">
+        <img src="sports1.jpg" alt="Sneakers" />
+        <h3>SpeedRun Sneakers</h3>
+        <p>$89.99</p>
+      </div>
+
+      <!-- 🩳 Product 3 -->
+      <div class="product-card">
+        <img src="sports3.jpg" alt="Shorts" />
+        <h3>FlexFit Training Shorts</h3>
+        <p>$29.99</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    <p>&copy; 2023 A.Wears Sports | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
